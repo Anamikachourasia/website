@@ -18,8 +18,51 @@
      
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
      <title>Kohli Production</title>
+     <style>
+      .parent-box{
+        background-color: rgb(3, 63, 78);
+        display: flex;
+      }
+      .box{
+        height: 300px;
+        background-color: rgb(2, 32, 56);
+        margin: 10px;
+      }
+      .owl-carousel .owl-nav button.owl-prev{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: green;
+  }
+  
+  /* #WEB SURAJ# */
+  
+       .owl-carousel .owl-nav button.owl-next{
+      background: none;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font: inherit;	
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: green;
+       }
+    </style>
   </head>
-<body>
+<body class="a">
     <!--nav-->
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light ">
@@ -55,7 +98,7 @@
                     <p>Kohli Productions is an award-winning full-service creative agency that provides creatively crafted video production services that are designed to deliver the brand's main message and engage your target audience</p>
                 </div>
                 <div class="col-md-6 text-center">
-                  <img src="1.png" class="img-fluid">
+                  <img src="1st.png" class="img-fluid">
               </div>
             </div>
         </div>
@@ -131,6 +174,107 @@
       </div>
     </section>
     <!--testimonilas-->
+    <!--latest-->
+    
+    <section id="latest">
+      <div class= "container">
+        <h1 class="text-center glow">Our Web episodes of "YARRI WITH YUVI"</h1>
+        <div class="row">
+          <div class="col">
+            <div class="feature-img">
+              <video width="100%" id="myvideo" controls autoplay>
+              <source src="3.mp4" type="video/mp4">
+            </video>
+               
+            </div>
+          </div>
+            <div class="col">
+              <div class="small-img-row" id="mobile">
+                <div class="small-img">
+                  <img src= "we.png">
+                  <img src="pl.png" class="play-btn" onclick="playvideo('1.mp4','mobile')">
+                </div>
+                  <p>Yuvraj Shergill at Garden of Silence, Sukna Lake, Chandigarh</p>
+                
+              </div>
+              <div class="small-img-row" id="Valentine">
+                <div class="small-img">
+                  <img src= "val.jpeg">
+                  <img src="pl.png" class="play-btn" onclick="playvideo('2.mp4','Valentine')">
+                </div>
+                  <p>Yuvraj Shergill is celebrating Valentine's with the people of Tricity.</p>
+                
+              </div>
+              <div class="small-img-row" id="Women">
+                <div class="small-img">
+                  <img src= "wom.jpeg">
+                  <img src="pl.png"  class="play-btn"onclick="playvideo('3.mp4' ,'Women')">
+                  
+                </div>
+                  <p>Yuvraj Shergill at Leisure Valley, Chandigarh to celebrate Women Day. </p>
+                
+              </div>
+              
+            </div>
+        
+        </div>
+      </div>
+    </section>
+      <section id="late">
+      <h1 class="text-center">Our Latest Work</h1>
+      <div class="row parent-box owl-carousel">
+        <div class="box">
+          <iframe width="320" height="300" src="Neha(360p).mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box">
+          <iframe width="320" height="300" src="Honey(360p).mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+        </div>
+        <div class="box">
+          <iframe width="320" height="300" src="Sneh.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+        </div>
+        <div class="box">
+          <iframe width="320" height="300" src="TRIFIND(480p).mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+        </div>
+        
+        
+      </div>
+    
+      <script src="jquery.js"></script>
+      <script src="ind.js"></script>
+      <script>
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          items:4,
+          autoplay:true,
+          autoplayTimeout:6000,
+          responsive : {
+            0 : {
+              items:1
+            },
+    
+            480 : {
+              items:2
+            },
+    
+            768 : {
+              items:3
+            },
+    
+            992 : {
+              items:4
+            }
+    
+    
+          }
+          });
+      </script>
+    </section>
+    <!--latest-->
     
     <!--footer-->
     <section id="footer">
@@ -156,6 +300,25 @@
       </div>
     </section>
     <!--footer-->
+    <script>
+      function playvideo(file,id)
+      {
+         myvideo.src=file;
+         var st= document.getElementById(id)
+         var c= document.querySelectorAll(".small-img-row");
+         for(var i=0;i<c.length;i++)
+         {
+         c[i].style.backgroundColor="white";
+        // c[i].style.color="black";
+         }
+        // c.style.backgroundColor="white";
+         //console.log(c);
+
+         st.style.backgroundColor="rgb(125, 195, 228)";
+        // st.style.fontColor="white";
+         
+      }
+    </script>
 </body>
 
 
