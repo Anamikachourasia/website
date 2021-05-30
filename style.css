@@ -204,16 +204,20 @@ body{
     border-radius:50%;
     margin:0 10px;
 }
+#rt
+{
+  display: block;
+}
 #latest
 {
-    background:#022d5e;
+  background-image: linear-gradient(to right, #13011f,#020933);
     color:rgb(133, 14, 69);
    
-    
+    padding-top: 2%;
 }
 #latest h1{
-    padding-top:10%;
-    margin-bottom: 5%;
+   /* padding-top:10%;*/
+    margin-bottom: 10%;
 }
 .glow {
   
@@ -545,4 +549,3 @@ video:focus{
 #late h1{
     padding-bottom: 8%;
 }
-
