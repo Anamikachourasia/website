@@ -153,6 +153,75 @@
 
     </section>
     <!--about us-->
+    <!--work-->
+    <section id="latest">
+      <div class= "container">
+        <h1 class="text-center glow">Our Web episodes of "YARRI WITH YUVI"</h1>
+        <div class="row">
+          <div class="col">
+            <div class="feature-img">
+             <!-- <video width="100%" height="100%" id="myvideo" controls autoplay>-->
+              
+                <embed width="100%" height="100%" id="myvideo" src="fi.jpg">
+                <img src="" width="100%" height="100%" id="rt"></embed>
+             <!-- <source src="https://www.youtube.com/embed/Q7hcPqqR6GQ" type="video/mp4/image">-->
+          <!-- </video>-->
+               
+            </div>
+          </div>
+            <div class="col">
+              <div class="small-img-row" id="mobile">
+                <div class="container">
+                <div class="row">
+                
+                <div class="small-img col-lg-5">
+                  <img src= "we.png" class="ui">
+                  <img src="pl.png" class="play-btn" onclick="playvideo('https:\/\\/\www.youtube.com/embed/s81IXmhLseA','mobile','rt')">
+                </div>
+                <div class="col-lg-7">
+                  <p>Yuvraj Shergill at Garden of Silence, Sukna Lake, Chandigarh</p>
+                </div>
+                </div>
+                </div>
+              </div>
+              
+              <div class="small-img-row" id="Valentine">
+                <div class="container">
+                  <div class="row">
+                <div class="small-img col-lg-5">
+                  <img src= "val.jpeg" class="ua">
+                  <img src="pl.png" class="play-btn" onclick="playvideo('https:\/\\/\www.youtube.com/embed/Ol2L52U7iMs','Valentine','rt')">
+                </div>
+                <div class="col-lg-7">
+                  <p>Yuvraj Shergill is celebrating Valentine's with the people of Tricity.</p>
+                </div>
+              </div>
+              </div>
+              </div>
+
+
+              
+              <div class="small-img-row" id="Women">
+                <div class="container">
+                  <div class="row">
+                <div class="small-img col-lg-5">
+                  <img src= "wom.jpeg" class="ui">
+                  <img src="pl.png"  class="play-btn"onclick="playvideo('https:\/\\/\www.youtube.com/embed/3P-JZ8nmyEs' ,'Women','rt')">
+                  
+                </div>
+                <div class="col-lg-7">
+                  <p>Yuvraj Shergill at Leisure Valley, Chandigarh to celebrate Women's Day. </p>
+                </div>
+              </div>
+              </div>
+              </div>
+              
+            </div>
+            
+        </div>
+      </div>
+      </section>
+      <!--work-->
     <!--testimonilas-->
     <section id="testimonials">
       <div class="container">
@@ -176,69 +245,7 @@
     <!--testimonilas-->
     <!--latest-->
     
-    <section id="latest">
-      <div class= "container">
-        <h1 class="text-center glow">Our Web episodes of "YARRI WITH YUVI"</h1>
-        <div class="row">
-          <div class="col">
-            <div class="feature-img">
-              <video width="100%" height="100%" id="myvideo" controls autoplay>
-              <source src="we.png" type="video/mp4/image">
-            </video>
-               
-            </div>
-          </div>
-            <div class="col">
-              <div class="small-img-row" id="mobile">
-                <div class="container">
-                <div class="row">
-                
-                <div class="small-img col-lg-5">
-                  <img src= "we.png" class="ui">
-                  <img src="pl.png" class="play-btn" onclick="playvideo('1.mp4','mobile')">
-                </div>
-                <div class="col-lg-7">
-                  <p>Yuvraj Shergill at Garden of Silence, Sukna Lake, Chandigarh</p>
-                </div>
-                </div>
-                </div>
-              </div>
-              
-              <div class="small-img-row" id="Valentine">
-                <div class="container">
-                  <div class="row">
-                <div class="small-img col-lg-5">
-                  <img src= "val.jpeg" class="ua">
-                  <img src="pl.png" class="play-btn" onclick="playvideo('2.mp4','Valentine')">
-                </div>
-                <div class="col-lg-7">
-                  <p>Yuvraj Shergill is celebrating Valentine's with the people of Tricity.</p>
-                </div>
-              </div>
-              </div>
-              </div>
-
-
-              
-              <div class="small-img-row" id="Women">
-                <div class="container">
-                  <div class="row">
-                <div class="small-img col-lg-5">
-                  <img src= "wom.jpeg" class="ui">
-                  <img src="pl.png"  class="play-btn"onclick="playvideo('3.mp4' ,'Women')">
-                  
-                </div>
-                <div class="col-lg-7">
-                  <p>Yuvraj Shergill at Leisure Valley, Chandigarh to celebrate Women's Day. </p>
-                </div>
-              </div>
-              </div>
-              </div>
-              
-            </div>
-        
-        </div>
-      </div>
+   
     <!--</section>
       <section id="late">
       <h1 class="text-center">Our Latest Work</h1>
@@ -321,9 +328,10 @@
     </section>
     <!--footer-->
     <script>
-      function playvideo(file,id)
+      function playvideo(file,id,i)
       {
          myvideo.src=file;
+         i.style.display="none";
          var st= document.getElementById(id)
          var c= document.querySelectorAll(".small-img-row");
          for(var i=0;i<c.length;i++)
