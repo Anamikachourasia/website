@@ -18,49 +18,7 @@
      
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
      <title>Kohli Production</title>
-     <style>
-      .parent-box{
-        background-color: rgb(3, 63, 78);
-        display: flex;
-      }
-      .box{
-        height: 300px;
-        background-color: rgb(2, 32, 56);
-        margin: 10px;
-      }
-      .owl-carousel .owl-nav button.owl-prev{
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0 !important;
-        font: inherit;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: green;
-  }
-  
-  /* #WEB SURAJ# */
-  
-       .owl-carousel .owl-nav button.owl-next{
-      background: none;
-        color: inherit;
-        border: none;
-        padding: 0 !important;
-        font: inherit;	
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: green;
-       }
-    </style>
+     
   </head>
 <body class="a">
     <!--nav-->
@@ -153,6 +111,31 @@
 
     </section>
     <!--about us-->
+    <!--latest-->
+    <section id="work">
+      <h1 class="title text-center">Our Latest Work</h1> 
+      <div class="container">
+        <div class="video-conatier">
+             <div class="video">
+             
+              <video src="Sneh.mp4" muted></video>
+              
+              
+             </div>
+             <div class="video">
+               <video src="Honey(360p).mp4" muted></video>
+           </div>
+           <div class="video">
+               <video src="Neha(360p).mp4" muted></video>
+           </div>
+           <div class="video">
+               <video src="TRIFIND(480p).mp4" muted></video>
+           </div>
+          
+        </div>
+    </div>
+    </section>
+    <!--latest-->
     <!--work-->
     <section id="latest">
       <div class= "container">
@@ -243,65 +226,9 @@
       </div>
     </section>
     <!--testimonilas-->
-    <!--latest-->
+   
     
    
-    <!--</section>
-      <section id="late">
-      <h1 class="text-center">Our Latest Work</h1>
-      <div class="row parent-box owl-carousel">
-        <div class="box">
-          <iframe width="320" height="300" src="Neha(360p).mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="box">
-          <iframe width="320" height="300" src="Honey(360p).mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-        </div>
-        <div class="box">
-          <iframe width="320" height="300" src="Sneh.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-        </div>
-        <div class="box">
-          <iframe width="320" height="300" src="TRIFIND(480p).mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-        </div>
-        
-        
-      </div>
-    
-      <script src="jquery.js"></script>
-      <script src="ind.js"></script>
-      <script>
-        $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:10,
-          nav:true,
-          items:4,
-          autoplay:true,
-          autoplayTimeout:6000,
-          responsive : {
-            0 : {
-              items:1
-            },
-    
-            480 : {
-              items:2
-            },
-    
-            768 : {
-              items:3
-            },
-    
-            992 : {
-              items:4
-            }
-    
-    
-          }
-          });
-      </script>
-    </section>-->
-    <!--latest-->
     
     <!--footer-->
     <section id="footer">
@@ -347,6 +274,25 @@
          
       }
     </script>
+    <script>
+      var video= document.querySelectorAll("video")
+      video.forEach(play=>play.addEventListener('click',()=>
+      {
+
+         play.classList.toggle('active');
+         if(play.paused)
+         {
+             play.play()
+         }
+         else
+         {
+             play.pause();
+             play.currentTime=0;
+         }
+      }))
+      
+  </script>
+    
 </body>
 
 
