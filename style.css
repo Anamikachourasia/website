@@ -226,7 +226,7 @@ body{
 }
 .video-conatier .video{
     height:15rem;
-    width: 25rem;
+    width: 20rem;
     margin: 2rem;
     /*box-shadow: 0.5rem 1rem rgba(0,0,0,.5);*/
     /* overflow:hidden; */
@@ -264,8 +264,7 @@ video{
 {
     display: block;
     color: rgb(163, 235, 240);
-    padding-top:2px;
-    padding-bottom: 5px;
+    
 }
 #rt
 {
