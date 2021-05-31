@@ -209,13 +209,14 @@ body{
   box-sizing: border-box;
   background-image: linear-gradient(to right, #0c2720,#260242);
   color: whitesmoke;
+  padding-bottom: 20px;
 }
 #work h1{
-  padding-top: 20px;;
+  padding-top: 20px;
 }
 #work .container{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .video-conatier
 {
@@ -228,10 +229,11 @@ body{
     width: 25rem;
     margin: 2rem;
     /*box-shadow: 0.5rem 1rem rgba(0,0,0,.5);*/
-    overflow:hidden;
+    /* overflow:hidden; */
     border-radius: 1rem;
 }
-.video-conatier .video video{
+
+video{
     height: 100%;
     width:100%;
     object-fit:cover;
@@ -258,7 +260,13 @@ body{
     transition: none;
     transform :translate(-50%,-50%);
 }
-
+.video-conatier .video p
+{
+    display: block;
+    color: rgb(163, 235, 240);
+    padding-top:2px;
+    padding-bottom: 5px;
+}
 #rt
 {
   display: block;
