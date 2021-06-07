@@ -225,7 +225,7 @@ body{
     flex-wrap: wrap;
 }
 .video-conatier .video{
-    height:15rem;
+    height:10rem;
     width: 20rem;
     margin: 2rem;
     /*box-shadow: 0.5rem 1rem rgba(0,0,0,.5);*/
@@ -262,8 +262,9 @@ video{
 }
 .video-conatier .video p
 {
-    display: block;
+    display: flex;
     color: rgb(163, 235, 240);
+    margin-bottom: 5px;
     
 }
 #rt
@@ -444,4 +445,22 @@ video:focus{
 }
 #late h1{
     padding-bottom: 8%;
+}
+@import url(//fonts.googleapis.com/css?family=Oregano|Merienda);
+
+.mwl {
+font-family: 'Merienda', cursive;
+color: white;
+}
+.ks {
+font-family: 'Oregano', cursive;
+font-size:18px;
+color: rgb(226, 15, 86);
+}
+.ks a{
+text-transform: none !important;
+}
+.sd
+{
+    padding-bottom: 20px;
 }
