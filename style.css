@@ -11,35 +11,47 @@ body{
 {
     background-color: black;
 }
+/* #navigation */
+
+
+
+
 
 #nav-bar
 {
     position:sticky;
     top:0;
-    z-index:10;
+    z-index:1000;
+    height: 50px;
+    
 }
 .navbar
 {
-    background-image: linear-gradient(to right, #4a98f1,#3f1dd6);
+    background-image: linear-gradient(to right, #1d334d,#020f2c);
     padding:0 !important;
+    opacity: 95%;
+    height: 70px;
 }
-.navbar-brand
+/* .navbar-brand
 {
     height: 40px;
     padding-left: 20px;
-}
+    font-family: 'Allerta Stencil';
+    font-size: 52px;
+    font-weight: bold;
+} */
 .navbar-nav li{
     padding: 0 10px;
 }
 .navbar-nav li a{
-    color:#fff !important;
+    color:rgb(129, 230, 248) !important;
     font-weight:600;
     float:right;
     text-align:left;
 }
 .fa-bars
 {
-    color: #fff;
+    color: rgb(131, 229, 247);
     font-size: 30px !important;
 }
 .navbar-toggler
@@ -47,11 +59,30 @@ body{
     outline:none !important;
 
 }
+#nav-bar h3 {
+    margin: 0;
+    font: normal 36px Cookie, cursive;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 20em;
+    margin-left: 10px;
+}
+#nav-bar h3 a {
+    text-decoration: none;
+    color: rgb(250, 252, 248);font-weight: 20em;
+}
+#nav-bar h3 span {
+    color: #1f98bd;font-weight: 20em;
+}
+
 #banner
 {
     background-image: linear-gradient(to right, #213b58,#15102e);
-    color: #fff;
+    color: rgb(231, 229, 229);
     padding-top:5%;
+    font-family: 'Balthazar';
+    font-size: 1.5em;
 }
 .promo-title
 {
@@ -65,11 +96,16 @@ body{
     width: 45px;
     margin: 20px;
 }
+
+
+/* #services */
 #services
 {
     padding: 80px 0;
-    color: white;
-    background-color: black;
+    color:rgb(7, 7, 7);
+    background-image: linear-gradient(to right, #95a6f0,#15102e);
+    font-family: 'Baskervville';
+    font-size: 18px;
 }
 #services h1{
     text-align: center;
@@ -80,6 +116,25 @@ body{
     height: 100%;
     margin-left:2px;
 }
+.services
+{
+    padding:20px;
+}
+#services .btn-primary
+{
+    box-shadow:none;
+    padding: 8px 25px;
+    border: none;
+    border-radius : 20px;
+    background-image: linear-gradient(to right, #213b58,#15102e);
+}
+/* about */
+
+
+
+
+
+
 .about-img
 {
     width:20%;
@@ -102,32 +157,34 @@ body{
     transform: translateY(-10px);
 }
 
-.services
-{
-    padding:20px;
-}
+
 .about h4
 {
    padding:5px;
    margin-top: 25px;
    text-transform: uppercase;
-   color: #78bbcc;
+   color: #0b0c0c;
+   font-family: 'Buenard';
+   font-size: 22px;
+   font-weight: bold;
    
 }
 .about h4::before{
     content: '';
     background : #0c0c0c;
     height: 5px;
-    width: 350px;
+    width: 345px;
     margin-left:auto;
     margin-right: auto;
     display: block;
-    transform :translateY(40px); 
+    transform :translateY(60px); 
 }
 .about p
 {
-    color:#f8f9fa;
-    margin-top: 30px;
+    color:#000005;
+    margin-top: 40px;
+    font-family: 'Bubblegum Sans';
+    font-size: 18px;
 }
 
 .title::before
@@ -153,27 +210,35 @@ body{
     display: block;
     transform :translateY(8px);
 }
-#services .btn-primary
-{
-    box-shadow:none;
-    padding: 8px 25px;
-    border: none;
-    border-radius : 20px;
-    background-image: linear-gradient(to right, #213b58,#15102e);
-}
+
 #about
 {
-    background: #2a3f53;
+    background-image: linear-gradient(to bottom, #7394b9,#3664a8);
     padding-bottom: 50px;
     padding-top:50px;
-    color:rgb(244, 244, 245)
+    color:rgb(0, 0, 8)
 }
-.about-title
+#about h1
 {
   font-size:40px;
-  font-weight: 600;
+  font-weight: bolder;
   margin-top: 8px;
+  font-family: 'Baskervville';
+
 }
+#about > div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(#870aec, #6e0b81);
+    clip-path: circle(20% at 10% 10%);
+    opacity: 20%;
+}
+
 .about-us
 {
     padding-top:60px;
@@ -186,33 +251,90 @@ body{
 {
     margin: 10px 0;
 }
-#testimonials
-{
-    margin: 100px 0;
-    background:black;
-    color:white;
+#about > div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2d2dff, #ff2f2f);
+    clip-path: circle(25% at right)
 }
-.testimonials
-{
-    border-left: 4px solid #142b46;
-    margin-top:50px;
-    margin-bottom:50px;
+
+
+.about {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 100;
+    font-family: 'Baskervville';
+    font-weight: bold;
 }
-.testimonials img{
-    height:80px;
-    width:80px;
-    border-radius:50%;
-    margin:0 10px;
+
+.about .row .card {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    cursor: pointer
 }
+
+.about .row .card .card-body {
+    padding: 1rem 1.2rem;
+    color: rgb(2, 2, 2);
+    font-family: 'Baskervville';
+}
+
+.about .row .card .card-body .card-img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transform: translateY(50px);
+    transition: 0.5s;
+    border-radius: 50%
+}
+
+.about .row .card .card-body .name {
+    transform: translateY(50px);
+    transition: 0.5s
+}
+
+.about .row .card .card-body .testimonial {
+    font-size: 0.8rem;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: 0.5s;
+    opacity: 0
+}
+
+.about .row .card:hover .card-body .testimonial,
+.about .row .card:hover .card-body .name,
+.about .row .card:hover .card-body .card-img img {
+    transform: translateY(0px);
+    opacity: 1
+}
+
+
+
+
+/* work */
 #work
 {
   box-sizing: border-box;
-  background-image: linear-gradient(to right, #0c2720,#260242);
-  color: whitesmoke;
+  background-image: linear-gradient(to left, #6699ad,#40617c);
+  color: rgb(0, 8, 8);
   padding-bottom: 20px;
 }
 #work h1{
   padding-top: 20px;
+  font-family: 'Baskervville';
+  font-weight: bold;
 }
 #work .container{
     padding-top: 20px;
@@ -263,7 +385,7 @@ video{
 .video-conatier .video p
 {
     display: flex;
-    color: rgb(163, 235, 240);
+    color: rgb(6, 26, 27);
     margin-bottom: 5px;
     
 }
@@ -271,9 +393,14 @@ video{
 {
   display: block;
 }
+
+
+
+
+/* latest */
 #latest
 {
-  background-image: linear-gradient(to right, #13011f,#020933);
+  background-image: linear-gradient(to right, #5cb5e9,#194f68);
     color:rgb(133, 14, 69);
    
     padding-top: 2%;
@@ -302,8 +429,9 @@ video{
 #latest > div
 {
     width:95%;
-    margin: 80px auto;
-    padding-bottom: 12%;
+    /* margin: 80px auto; */
+     padding-bottom: 12%;
+     padding-top: 2%;
     
 }
 #latest .row
@@ -403,6 +531,13 @@ video:focus{
    display:inline-block;
    font-size:12px;
 }
+
+
+
+
+
+
+/* footer */
 #soc
 {
     background: #f8f9fa;
@@ -433,6 +568,7 @@ video:focus{
 .soc-i img{
     width: 60px;
     transition: 0.5s;
+    display: inline-block;
 }
 .soc-i a:hover img{
     transform: translateY(-10px);
@@ -463,4 +599,204 @@ text-transform: none !important;
 .sd
 {
     padding-bottom: 20px;
+}  
+/*/////////*/
+
+/* Footer */
+footer {
+    background-color: #041220;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    
+    bottom: 0;
+    color: #fff
 }
+
+.footer-navigation h3 {
+    margin: 0;
+    font: normal 36px Cookie, cursive;
+    margin-bottom: 20px;
+    color: #fff
+}
+
+.footer-navigation h3 a {
+    text-decoration: none;
+    color: #fff
+}
+
+.footer-navigation h3 span {
+    color: #5383d3
+}
+
+.footer-navigation p.links a {
+    color: #fff;
+    text-decoration: none
+}
+
+.footer-navigation p.company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 20px
+}
+
+@media (max-width:767px) {
+    .footer-contacts {
+        margin: 30px 0
+        /* text-align: center; */
+        /* //padding-left: 5%; */
+    }
+}
+
+.footer-contacts p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+.footer-contacts p a {
+    color: #5383d3;
+    text-decoration: none
+}
+
+.fa.footer-contacts-icon {
+    background-color: #33383b;
+    color: #fff;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px 15px 10px 0
+}
+
+span.new-line-span {
+    display: block;
+    font-weight: normal;
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2
+}
+
+.footer-about h4 {
+    display: block;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-about p {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0
+}
+
+div.social-links {
+    margin-top: 10px;
+    color: #fff
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    /* background-color: #33383b; */
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-bottom: 10px
+}
+
+.footer {
+    bottom: 0;
+    /* position: absolute */
+}
+
+/*testimonials*/
+#clients
+{
+    background-image: linear-gradient(to right, #5eebf0,#073283);
+    color:rgb(1, 28, 36);
+    /* padding: 0 !important;  */
+    padding-top: 2%;
+    padding-bottom: 10%;
+    
+}
+#clients h1{
+    font-family: 'Baskervville';
+  font-weight: bold;
+}
+.maincard {
+    position: relative;
+    width: 300px;
+    height: 300px
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease
+}
+
+.thecard:hover {
+    transform: rotateY(180deg)
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hidden;
+    background: #32d1e6;
+    color: rgb(4, 0, 17);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 10px
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: hidden;
+    background: #011629;
+    color: rgb(190, 242, 252);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.user_name {
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    margin-top: 0px
+}
+
+.client {
+    font-size: 13px
+}
+
+
