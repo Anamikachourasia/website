@@ -99,7 +99,7 @@ body{
 
 
 /* #services */
-#services
+/* #services
 {
     padding: 80px 0;
     color:rgb(7, 7, 7);
@@ -127,6 +127,80 @@ body{
     border: none;
     border-radius : 20px;
     background-image: linear-gradient(to right, #213b58,#15102e);
+} */
+#services{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-color: #788688;
+}
+
+.about-section{ 
+    background: url(yu\ \(2\).jpg) no-repeat left;
+    background-size: 65%;
+    /* background-color: #c0ebf8; */
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-image: linear-gradient(to left, #b2cfd8,#2a2d31);
+    padding: 50px;
+}
+
+.inner-container h1{
+    margin-bottom: 20px;
+    color: rgb(192, 218, 226);
+    font-family: 'Baskervville';
+    text-align: left;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.text{
+    font-family: 'Forum';
+    font-weight: bold;
+    font-size: 20px;
+    color: #0a0a0a;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
 }
 /* about */
 
@@ -426,6 +500,7 @@ video{
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
+  
 #latest > div
 {
     width:95%;
