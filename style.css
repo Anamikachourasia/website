@@ -728,75 +728,110 @@ div.social-links {
 }
 
 /*testimonials*/
-#clients
+ #clients
 {
-    background-image: linear-gradient(to right, #5eebf0,#073283);
+    background-image: linear-gradient(to right, #7997b9,#4fcdec);
     color:rgb(1, 28, 36);
-    /* padding: 0 !important;  */
+     /* padding: 0 !important;   */
     padding-top: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     
 }
 #clients h1{
     font-family: 'Baskervville';
   font-weight: bold;
-}
-.maincard {
+} 
+
+.testimonial{
+    background-color: rgb(255, 255, 255);
+    border-right: 4px solid #2A3D7D;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(5, 5, 5, 0.1);
+    padding: 30px 30px 30px 130px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
     position: relative;
-    width: 300px;
-    height: 300px
 }
-
-.thecard {
+.testimonial:before{
+    background-color: rgb(255, 255, 255);
+    content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease
+    bottom: -4px;
+    left: -17px;
+    border-top: 25px solid #03347e;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
 }
-
-.thecard:hover {
-    transform: rotateY(180deg)
-}
-
-.thefront {
+.testimonial:after{
+    background-color: rgb(255, 255, 255);
+    content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: hidden;
-    background: #32d1e6;
-    color: rgb(4, 0, 17);
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid #eee;
-    box-shadow: 5px 6px 6px 2px #e9ecef;
-    padding: 10px
+    top: -4px;
+    left: -17px;
+    border-top: 25px solid #035b6b;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(135deg);
 }
-
-.theback {
+.testimonial .pic{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
     position: absolute;
+    top: 60px;
+    left: 20px;
+}
+.testimonial .pic img{
     width: 100%;
-    height: 100%;
-    cursor: pointer;
-    background-color: hidden;
-    background: #011629;
-    color: rgb(190, 242, 252);
-    border-radius: 10px;
-    transform: rotateY(180deg);
-    border: 1px solid #eee;
-    box-shadow: 5px 6px 6px 2px #e9ecef;
-    padding-bottom: 10px;
+    height: auto;
+}
+.testimonial .description{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #6f6f6f;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.testimonial .title1{
+    display: inline-block;
     font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1597a8;
+    margin: 0;
+}
+.testimonial .post{
+    display: inline-block;
+    font-size: 17px;
+    color: #29aad1;
+    font-style:italic;
+}
+#clients .owl-theme .owl-controls .owl-page span{
+    border: 2px solid #2A3D7D;
+    background: #fff !important;
+  border-radius:0 !important;
+    opacity: 1;
+}
+#clients .owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span{
+    background: #086b79 !important;
+  border-color:#29aad1;
+}
+@media only screen and (max-width: 767px){
+    .testimonial{
+        padding: 20px;
+        text-align: center;
+    }
+    .testimonial .pic{
+        display: block;
+        position: static;
+        margin: 0 auto 15px;
+    }
 }
 
-.user_name {
-    color: rgb(8, 8, 8);
-    font-size: 20px;
-    margin-top: 0px
-}
-
-.client {
-    font-size: 13px
-}
 
 
