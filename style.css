@@ -817,7 +817,7 @@ div.social-links {
   font-weight: bold;
 } 
 
-#clients .testimonial{
+.clients .testimonial{
     background-color: rgb(255, 255, 255);
     border-right: 4px solid #2A3D7D;
     border-radius: 5px;
@@ -827,7 +827,7 @@ div.social-links {
     overflow: hidden;
     position: relative;
 }
-#clients .testimonial:before{
+.clients .testimonial:before{
     background-color: rgb(255, 255, 255);
     content: "";
     position: absolute;
@@ -838,7 +838,7 @@ div.social-links {
     border-right: 25px solid transparent;
     transform: rotate(45deg);
 }
-#clients .testimonial:after{
+.clients .testimonial:after{
     background-color: rgb(255, 255, 255);
     content: "";
     position: absolute;
@@ -849,7 +849,7 @@ div.social-links {
     border-right: 25px solid transparent;
     transform: rotate(135deg);
 }
-#clients .testimonial .pic{
+.clients .testimonial .pic{
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -859,18 +859,18 @@ div.social-links {
     top: 60px;
     left: 20px;
 }
-#clients .testimonial .pic img{
+.clients .testimonial .pic img{
     width: 100%;
     height: auto;
 }
-#clients .testimonial .description{
+.clients .testimonial .description{
     font-size: 15px;
     letter-spacing: 1px;
     color: #6f6f6f;
     line-height: 25px;
     margin-bottom: 15px;
 }
-#clients .testimonial .title1{
+.clients .testimonial .title1{
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
@@ -879,29 +879,29 @@ div.social-links {
     color: #1597a8;
     margin: 0;
 }
-#clients .testimonial .post{
+.clients .testimonial .post{
     display: inline-block;
     font-size: 17px;
     color: #29aad1;
     font-style:italic;
 }
-#clients .owl-theme .owl-controls .owl-page span{
+.clients .owl-theme .owl-controls .owl-page span{
     border: 2px solid #2A3D7D;
     background: #fff !important;
   border-radius:0 !important;
     opacity: 1;
 }
-#clients .owl-theme .owl-controls .owl-page.active span,
+.clients .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls .owl-page:hover span{
     background: #086b79 !important;
   border-color:#29aad1;
 }
 @media only screen and (max-width: 767px){
-    #clients .testimonial{
+    .clients .testimonial{
         padding: 20px;
         text-align: center;
     }
-    #clients .testimonial .pic{
+    .clients .testimonial .pic{
         display: block;
         position: static;
         margin: 0 auto 15px;
