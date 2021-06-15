@@ -379,7 +379,7 @@ body{
     transition: 0.5s
 }
 
-.about .row .card .card-body .testimonial1 {
+.about .row .card .card-body .testimonial {
     font-size: 0.8rem;
     pointer-events: none;
     transform: translateY(10px);
@@ -387,7 +387,7 @@ body{
     opacity: 0
 }
 
-.about .row .card:hover .card-body .testimonial1,
+.about .row .card:hover .card-body .testimonial,
 .about .row .card:hover .card-body .name,
 .about .row .card:hover .card-body .card-img img {
     transform: translateY(0px);
@@ -817,7 +817,7 @@ div.social-links {
   font-weight: bold;
 } 
 
-.testimonial{
+#clients .testimonial{
     background-color: rgb(255, 255, 255);
     border-right: 4px solid #2A3D7D;
     border-radius: 5px;
@@ -827,7 +827,7 @@ div.social-links {
     overflow: hidden;
     position: relative;
 }
-.testimonial:before{
+#clients .testimonial:before{
     background-color: rgb(255, 255, 255);
     content: "";
     position: absolute;
@@ -838,7 +838,7 @@ div.social-links {
     border-right: 25px solid transparent;
     transform: rotate(45deg);
 }
-.testimonial:after{
+#clients .testimonial:after{
     background-color: rgb(255, 255, 255);
     content: "";
     position: absolute;
@@ -849,7 +849,7 @@ div.social-links {
     border-right: 25px solid transparent;
     transform: rotate(135deg);
 }
-.testimonial .pic{
+#clients .testimonial .pic{
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -859,18 +859,18 @@ div.social-links {
     top: 60px;
     left: 20px;
 }
-.testimonial .pic img{
+#clients .testimonial .pic img{
     width: 100%;
     height: auto;
 }
-.testimonial .description{
+#clients .testimonial .description{
     font-size: 15px;
     letter-spacing: 1px;
     color: #6f6f6f;
     line-height: 25px;
     margin-bottom: 15px;
 }
-.testimonial .title1{
+#clients .testimonial .title1{
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
@@ -879,7 +879,7 @@ div.social-links {
     color: #1597a8;
     margin: 0;
 }
-.testimonial .post{
+#clients .testimonial .post{
     display: inline-block;
     font-size: 17px;
     color: #29aad1;
@@ -897,11 +897,11 @@ div.social-links {
   border-color:#29aad1;
 }
 @media only screen and (max-width: 767px){
-    .testimonial{
+    #clients .testimonial{
         padding: 20px;
         text-align: center;
     }
-    .testimonial .pic{
+    #clients .testimonial .pic{
         display: block;
         position: static;
         margin: 0 auto 15px;
