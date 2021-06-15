@@ -379,7 +379,7 @@ body{
     transition: 0.5s
 }
 
-.about .row .card .card-body .testimonial {
+.about .row .card .card-body .testimonial1 {
     font-size: 0.8rem;
     pointer-events: none;
     transform: translateY(10px);
@@ -387,7 +387,7 @@ body{
     opacity: 0
 }
 
-.about .row .card:hover .card-body .testimonial,
+.about .row .card:hover .card-body .testimonial1,
 .about .row .card:hover .card-body .name,
 .about .row .card:hover .card-body .card-img img {
     transform: translateY(0px);
